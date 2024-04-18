@@ -25,7 +25,7 @@ Condição: a soma de dois lados tem que ser maior que o terceiro lado.
 # Biblioteca unitest para realizar os testes
 import unittest
 
-# Função do Triangulo
+#  ----- Função do Triangulo -----
 class Triangulo:    
     def tipo_triangulo(self, lado1, lado2, lado3):
         if lado1 <= 0 or lado2 <= 0 or lado3 <= 0:
@@ -41,6 +41,7 @@ class Triangulo:
         else:
             return "Triângulo escaleno"
 
+# ------ Testes do Triangulo ------
 
 class TestTriangulo(unittest.TestCase):
     def setUp(self):
