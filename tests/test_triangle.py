@@ -35,11 +35,11 @@ class Triangulo:
             return "Não é um triângulo válido"
         
         if lado1 == lado2 == lado3:
-            return "Triângulo equilátero"
+            return "Triângulo Equilátero"
         elif lado1 == lado2 or lado1 == lado3 or lado2 == lado3:
-            return "Triângulo isósceles"
+            return "Triângulo Isósceles"
         else:
-            return "Triângulo escaleno"
+            return "Triângulo Escaleno"
 
 # ------ Testes do Triangulo ------
 
