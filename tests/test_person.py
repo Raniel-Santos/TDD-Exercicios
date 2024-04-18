@@ -76,7 +76,6 @@ class TestPessoa(unittest.TestCase):
         self.dao = PessoaDAO()
 
     def test_nome_valido(self):
-        # Teste para nome válido
         self.dao = PessoaDAO()
         valid_nome = "Abel Ferreira"
         self.assertTrue(self.dao.nome_e_valido(valid_nome))
