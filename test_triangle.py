@@ -20,26 +20,19 @@ Condição: a soma de dois lados tem que ser maior que o terceiro lado.
     11. Um CT para os três valores iguais a zero
     
 '''
+import sys, os
 
+# cur_path = os.path.dirname(os.path.abspath(__file__))
+# head, tail = os.path.split(os.path.split(cur_path)[0])
+# sys.path.insert(0, os.path.join(head, 'src'))
+# sys.path.insert(1, os.path.join(head, 'tests'))
 
 # Biblioteca unitest para realizar os testes
 import unittest
+from triangulo import Triangulo
 
 #  ----- Função do Triangulo -----
-class Triangulo:    
-    def tipo_triangulo(self, lado1, lado2, lado3):
-        if lado1 <= 0 or lado2 <= 0 or lado3 <= 0:
-            return "Não é um triângulo válido"
-        
-        if lado1 + lado2 <= lado3 or lado1 + lado3 <= lado2 or lado2 + lado3 <= lado1:
-            return "Não é um triângulo válido"
-        
-        if lado1 == lado2 == lado3:
-            return "Triângulo Equilátero"
-        elif lado1 == lado2 or lado1 == lado3 or lado2 == lado3:
-            return "Triângulo Isósceles"
-        else:
-            return "Triângulo Escaleno"
+
 
 # ------ Testes do Triangulo ------
 
@@ -86,5 +79,3 @@ class TestTriangulo(unittest.TestCase):
     def test_todos_os_lados_iguais_zero(self):
         self.assertEqual("Não é um triângulo válido", self.triangulo.tipo_triangulo(0, 0, 0))
 
-if __name__ == '__main__':
-    unittest.main()
