@@ -11,7 +11,7 @@ Como os testes foram feitos em Unittest, biblioteca contida no proprio Python, n
 ### Para executar os testes
 Abra um terminal na raiz do projeto e execute o comando abaixo para executar os testes:
 ```bash
-python3 -m coverage run -m unittest
+python -m coverage run -m unittest
 ```
 Para gerar um report de cobertura, execute:
 ```bash
