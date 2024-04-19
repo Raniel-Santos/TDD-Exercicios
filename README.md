@@ -9,15 +9,12 @@ Para que rodar os testes, é apenas necessário que tenha instalado no seu compu
 Como os testes foram feitos em Unittest, biblioteca contida no proprio Python, não será necessario criar um abiente virtual.
 
 ### Para executar os testes
-Abra um terminal dentro da pasta do projeto, navegue para pasta "tests" e execute o comando abaixo para os testes do Triangulo:
+Abra um terminal na raiz do projeto e execute o comando abaixo para executar os testes:
 ```bash
-python test_triangle.py
+python3 -m coverage run -m unittest
 ```
-Para os testes da Pessoa:
+Para gerar um report de cobertura, execute:
 ```bash
-python test_person.py
+python -m coverage report
 ```
-Para os testes dos Salários dos Funcionários:
-```bash
-python test_salarios.py
-```
+
